@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<%- include('layouts/header') %>
+	<%- include('meta/horoscope') %>
+</head>
+
+<body>
+
+	<div id="page-content-wrapper">
+		<%- include('layouts/navbar')%>
+		<!--main slider-->
+		<div class="container-fluid">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="primary margin-15">
+						<div class="row">
+							<div class="col-md-6">
+								<h2>Horoscope</h2>
+								<br />
+								<ul class="list-unstyled">
+									<% for (var i = 0; i < 6; i++) { %>
+									<div class="shadow p-3 mb-5 bg-white rounded">
+										<li class="media">
+											<img src="<%=horoscopeImages[i]%>" class="mr-3" alt="HoroscopeSigns"
+												height="64px" width="64px">
+											<div class="media-body">
+												<h5 class="mt-0 mb-1"><%=data[i].display%></h5>
+												<%=data[i].summary%>
+											</div>
+										</li>
+									</div>
+									<% } %>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<h2></h2>
+								<br />
+								<ul class="list-unstyled">
+									<% for (var i = 6; i < data.length; i++) { %>
+									<div class="shadow p-3 mb-5 bg-white rounded">
+										<li class="media">
+											<img src="<%=horoscopeImages[i]%>" height="64px" width="64px" class="mr-3"
+												alt="HoroscopeSigns">
+											<div class="media-body">
+												<h5 class="mt-0 mb-1"><%=data[i].display%></h5>
+												<%=data[i].summary%>
+											</div>
+										</li>
+									</div>
+									<% } %>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--.primary-->
+				</div>
+			</div>
+		</div>
+		<!--main slider-->
+		<%- include('layouts/footer') %>
+	</div>
+</body>
+
+</html>

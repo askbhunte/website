@@ -1,0 +1,157 @@
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root" style="margin-right:10%"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v6.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat" attribution=setup_tool page_id="657175361415875">
+</div>
+<!--footer part-->
+<div class="container-fluid" style="background-color:#1B1718;margin-top:10px;">
+    <div class="container animate-box">
+        <div class="bottom margin-15">
+            <div class="row" style="padding-bottom:5%;">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h5 style="color:white">ABOUT US</h5><br />
+                    <p style="color:#626061">
+                        Ask Bhunte is a new automated service in Nepal. I can give you
+                        real-time information on Restaurants, News, Stocks, Horoscope,
+                        Weather, Electricity Bill, Gold Price by just talking to me on
+                        Facebook Messenger</p>
+                    <p style="color:#626061">For more enquiry, <span style="color:white">Please contact
+                            us:</span></p>
+                    <p style="color:#626061"> Tel: <span style="color:white">977 9849654821</span></p>
+                    <p style="color:#626061"> Mail: <span style="color:white">team@rumsan.com</span></p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h5 style="color:white">MOST POPULAR</h5><br />
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div style="height:67.5px;width:67.5px;background-color:grey">
+                                <img src="" style="object-fit: cover;height:67.5px;overflow: hidden;"
+                                    id="footerNewsImage0">
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <a href="" target="_blank" id="footerNewsLink0">
+                                <p style=" color:white;margin-bottom:0px;" id="footerNewsTitle0"></p>
+                                <p style="color:#626061; font-size:12px;" id="footerNewsSource0"></p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3" style="margin-top:10px;">
+                            <div style="height:67.5px;width:67.5px;background-color:grey">
+                                <img src="" style="object-fit: cover;height:67.5px;overflow: hidden;"
+                                    id="footerNewsImage1">
+                            </div>
+                        </div>
+                        <div class="col-lg-9" style="margin-top:10px;">
+                            <a href="" target="_blank" id="footerNewsLink1">
+                                <p style=" color:white;margin-bottom:0px;" id="footerNewsTitle1"></p>
+                                <p style="color:#626061; font-size:12px;" id="footerNewsSource1"></p>
+                            </a>
+                        </div>
+                        <div class="col-lg-3" style="margin-top:10px;">
+                            <div style="height:67.5px;width:67.5px;background-color:grey">
+                                <img src="" style="object-fit: cover;height:67.5px;overflow: hidden;"
+                                    id="footerNewsImage2">
+                            </div>
+                        </div>
+                        <div class="col-lg-9" style="margin-top:10px;">
+                            <a href="" target="_blank" id="footerNewsLink2">
+                                <p style=" color:white;margin-bottom:0px;" id="footerNewsTitle2"></p>
+                                <p style="color:#626061; font-size:12px;" id="footerNewsSource2"></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h5 style="color:white">SUBSCRIBE US</h5><br />
+                    <form action="#" class="search-form" method="get" role="search">
+                        <label>
+                            <input type="search" name="s" value="" placeholder="You Email" class="search-field">
+                        </label>
+                        <input type="submit" value="SUBSCRIBE" class="search-submit">
+                    </form>
+                    <br />
+                    <h5 style="color:white">SOCIAL CONNECT</h5><br />
+                    <a href="https://www.facebook.com/askbhunte"><i class="fa fa-facebook fa-2x"
+                            style="color:white;margin-right:5%;"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x" style="color:white;margin-right:5%;"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-2x" style="color:white;margin-right:5%;"></i></a>
+                </div>
+
+
+            </div>
+            <!--.row-->
+        </div>
+    </div>
+</div>
+<!--footer part-->
+
+
+<!--copyright part-->
+<div class="container-fluid " style="background-color:#000000">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <p style="text-align: center;padding:1%;color:white">© Copyright 2019, All rights
+                    reserved.
+                    Design by <a href="https://rumsan.com/"><span style="color:red">Rumsan</span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--copyright part-->
+
+
+<!-- <div class="gototop js-top">
+    <a href="#" class="js-gotop"></a>
+</div> -->
+</div>
+<!--page-content-wrapper-->
+<!--theme script starts-->
+<script>
+    $.ajax({
+        url: '/footer-news', success: function (result) {
+            var data = (result);
+            for (var i = 0; i < 3; i++) {
+                var x1 = "#footerNewsImage" + i;
+                var x2 = "#footerNewsLink" + i;
+                var x3 = "#footerNewsTitle" + i;
+                var x4 = "#footerNewsSource" + i;
+                $(x1).attr("src", data[i].img_url);
+                $(x2).attr("href", data[i].url);
+                $(x3).text(data[i].title);
+                $(x4).text(data[i].source);
+            }
+
+        }
+    })
+
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+<script src="js/smart-sticky.js"></script>
+<script src="js/theia-sticky-sidebar.js"></script>
+<!--theme script ends-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<%- include('analytics') %>

@@ -1,0 +1,74 @@
+<!--top bar-->
+<div class="container-fluid">
+  <div class="text-center" style="background:#cf3d3c;width:100%">
+    <a href="https://nepalcorona.info" target="_blank" style="color:white;font-size:auto;text-align: center;">Protect
+      yourself from
+      Coronavirus. Learn more at nepalcorona.info <strong>click here >></strong></a>
+  </div>
+  <div class="container">
+    <div class="top_bar margin-15">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 time">
+          <i class="fa fa-calendar"></i> <span id="todayDay"></span>, <span id="todayDate"></span>&nbsp;&nbsp;&nbsp;<i
+            class="fa fa-clock-o"></i>&nbsp;<span id="timeNepali"></span>
+        </div>
+        <div class="col-md-6 col-sm-12 social"><span id="todayNepaliBar"></span>, <span id="todayNepaliDate"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--top bar-->
+
+<!--heading-->
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-2 col-md-1 header">
+        <img class="float-right" src="https://assets.rumsan.com/askbhunte/assets/bhunte.png	" height="100px"
+          width="100px" />
+      </div>
+      <div class="col-10 col-md-11 header">
+        <h1 class="logo"><a href="/">ASK BHUNTE</a></h1>
+        <p class="tagline">SMARTEST KID IN NEPAL</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--heading-->
+
+<!--nav bar-->
+<div class="main-nav section_margin">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12 main_nav_cover" id="nav">
+          <ul id="main-menu">
+            <li><a href="/">Home</a></li>
+            <li class="menu-item-has-children">
+              <a id="btn_features" href="/#category_features">Features</a>
+              <ul class="sub-menu">
+                <li><a href="/vegetables">Vegetable price</a></li>
+                <li><a href="/forex">Foreign exchange rate</a></li>
+                <li><a href="/bullion">Gold Price</a></li>
+                <li><a href="/horoscope">Horoscope</a></li>
+              </ul>
+            </li>
+            <li><a href="/about-us">About us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--nav bar-->
+
+<script>
+  $.ajax({
+    url: "/nepali-date",
+    success: function (result) {
+      $("#todayNepaliDate").text(result);
+    }
+  });
+</script>

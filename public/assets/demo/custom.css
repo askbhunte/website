@@ -1,0 +1,20 @@
+.about-text {
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(153, 153, 153);
+}
+
+.navbar-text {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.card .card-title {
+  margin-top: 1.5rem !important;
+}
+.btn.btn-just-icon .fa {
+  line-height: 20px !important;
+}
+.card .card-footer {
+  padding: 0px !important;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ask Bhunte - Smartest Kid in the town</title>
+  <%- include('layouts/meta') %>
+  <link rel="stylesheet prefetch"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+  <style>
+    .main-button {
+      color: "white";
+      margin-top: 20px;
+    }
+
+    .main-button>div {
+      color: "white";
+      padding: 10px 15px;
+    }
+
+    .instagram {
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 600;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      vertical-align: middle;
+      background: #d6249f;
+      background: radial-gradient(circle at 90% 147%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    @media only screen and (max-width: 600px) {
+      #mobile-none {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="no-js">
+  <div class="container-fluid" style="margin-top: 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-3 text-center">
+          <img src="https://assets.rumsan.com/askbhunte/assets/askbhunte.png" class="img-fluid" height="800" width="800"
+            alt="" />
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center">
+          Ask Bhunte is AI enabled bot. You can chat with me to get relavant and real-time information on various
+          information relating to Nepal like
+          news, COVID-19, movies, food, stock market, gold price, vegetable price, SEE results and lot more information.
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div id="mobile-none" class="row mt-4 pr-5 pl-5">
+        <div class="col-lg-6 col-md-6 text-center pr-4 pl-4">
+          <a href="https://rumsanmoney.com/" class="btn btn-lg main-button"
+            style="background-color: #006837; color: white; width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/rumsan-money-small-logo.png" height="40px"
+                width="40px " class="mr-1"> Rumsan Money</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6 text-center pr-4 pl-4">
+          <a href="https://corona.askbhunte.com/" class="btn btn-lg btn-success main-button" style="width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/nepalcorona-small-logo.png" height="35px"
+                width="35px " class="mr-1"> COVID-19 Updates</div>
+          </a>
+        </div>
+        <div class="col-md-6  col-lg-6 text-center pr-4 pl-4">
+          <a href="https://m.me/askbhunte?ref=askbhunte" class="btn btn-lg btn-primary main-button" role="button"
+            style="width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/chatbot-small-logo.png" height="35px"
+                width="35px " class="mr-1"> Ask me Anything (Bot)</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6 text-center pr-4 pl-4">
+          <a href="/katha4Nepal" class="btn btn-lg btn-warning main-button instagram">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/katha4nepal-small-logo.png" height="35px"
+                width="35px " class="mr-1"> #Katha4Nepal</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6 text-center pr-4 pl-4">
+          <a href="https://facebook.com/askbhunte" class="btn btn-lg main-button"
+            style="background-color: #3b5998; color: white; width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/dailyfunupdates-small-logo.png" height="35px"
+                width="35px " class="mr-1"> Daily Fun Updates</div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-6 text-center pr-4 pl-4">
+          <a href="/about" class="btn btn-lg main-button" style="background-color: #aa54ad; color: white; width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/about-askbhunte-small-logo.png" height="35px"
+                width="35px " class="mr-1"> About</div>
+          </a>
+        </div>
+      </div>
+      <!-- Mobile View -->
+      <div class="row mt-4 pr-5 pl-5 d-sm-none d-block">
+        <!-- <div class="col-md-6 text-center pr-4 pl-4"> 
+          <a href="/see" class="btn btn-lg main-button" style="background-color: #D0304B; color: white; width: 100%;">
+            <div>View SEE Result 2076</div>
+          </a>
+        </div>-->
+        <div class="col-md-6 text-center pr-4 pl-4">
+          <a href="https://rumsanmoney.com/" class="btn btn-lg main-button"
+            style="background-color: #006837; color: white; width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/rumsan-money-small-logo.png" height="40px"
+                width="40px " class="mb-3"><br /> Rumsan Money</div>
+          </a>
+        </div>
+        <div class="col-md-6 text-center pr-4 pl-4">
+          <a href="https://corona.askbhunte.com/" class="btn btn-lg btn-success main-button" style="width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/nepalcorona-small-logo.png" height="35px"
+                width="35px " class="mb-3"><br /> COVID-19 Updates</div>
+          </a>
+        </div>
+        <div class="col-md-6 text-center pr-4 pl-4">
+          <a href="https://m.me/askbhunte?ref=askbhunte" class="btn btn-lg btn-primary main-button" role="button"
+            style="width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/chatbot-small-logo.png" height="35px"
+                width="35px " class="mb-3"><br /> Ask me Anything (Bot)</div>
+          </a>
+        </div>
+        <div class="col-md-6 text-center pr-4 pl-4">
+          <a href="/katha4Nepal" class="btn btn-lg btn-warning main-button instagram">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/katha4nepal-small-logo.png" height="35px"
+                width="35px " class="mb-3"><br /> #Katha4Nepal</div>
+          </a>
+        </div>
+        <div class="col-md-6 text-center pr-4 pl-4">
+          <a href="https://facebook.com/askbhunte" class="btn btn-lg main-button"
+            style="background-color: #3b5998; color: white; width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/dailyfunupdates-small-logo.png" height="35px"
+                width="35px " class="mb-3"><br /> Daily Fun Updates</div>
+          </a>
+        </div>
+        <div class="col-md-6 text-center pr-4 pl-4">
+          <a href="/about" class="btn btn-lg main-button" style="background-color: #aa54ad; color: white; width: 100%;">
+            <div><img src="https://assets.rumsan.com/askbhunte/assets/about-askbhunte-small-logo.png" height="35px"
+                width="35px " class="mb-3"><br /> About</div>
+          </a>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <p style="color:#888">Copyright © 2021 Ask Bhunte – a subsidiary of <a href="https://rumsan.com/"
+              style="color:s#007bff">Rumsan
+              Associates.</a>
+            Designed by <a href="https://tech.rumsan.com/" style="color:#007bff">Rumsan</a> | <a href="/privacy-policy"
+              style="color:#007bff">Privacy Policy</a></p>
+        </div>
+      </div>
+      <style>
+        @media (min-width: 800px) {
+          .margin-in-large {
+            margin-top: 120px;
+          }
+        }
+      </style>
+    </div>
+  </div>
+  <%- include('layouts/analytics') %>
+</body>
+
+</html>
